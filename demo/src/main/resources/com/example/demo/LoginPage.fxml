@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<AnchorPane xmlns:fx="http://javafx.com/fxml" fx:controller="com.example.demo.controller.LoginUserController">
+    <children>
+        <!-- Centered StackPane -->
+        <StackPane AnchorPane.topAnchor="0" AnchorPane.bottomAnchor="0" AnchorPane.leftAnchor="0" AnchorPane.rightAnchor="0">
+            <VBox spacing="20" alignment="CENTER">
+                <!-- Cadre for Title -->
+                <VBox style="-fx-border-color: #4A90E2; -fx-border-width: 2; -fx-padding: 10; -fx-background-color: #FFFFFF;" alignment="CENTER">
+                    <Label text="Login" style="-fx-font-size: 24; -fx-font-weight: bold; -fx-text-fill: #4A90E2;" />
+                </VBox>
+                <!-- Cadre for Form -->
+                <VBox spacing="15" style="-fx-border-color: #4A90E2; -fx-border-width: 2; -fx-padding: 15; -fx-background-color: #F4F6F9;" alignment="CENTER">
+                    <TextField fx:id="usernameField" promptText="Username" style="-fx-background-color: #FFFFFF; -fx-padding: 10; -fx-border-color: #4A90E2;" />
+                    <PasswordField fx:id="passwordField" promptText="Password" style="-fx-background-color: #FFFFFF; -fx-padding: 10; -fx-border-color: #4A90E2;" />
+                    <Button text="Login" onAction="#handleLogin" style="-fx-background-color: #4A90E2; -fx-text-fill: white; -fx-font-weight: bold;" />
+                    <Button text="Back" onAction="#backMain" style="-fx-background-color: #4A90E2; -fx-text-fill: white; -fx-font-weight: bold;" />
+
+                    <Label fx:id="errorMessage" style="-fx-text-fill: red;" />
+                </VBox>
+            </VBox>
+        </StackPane>
+    </children>
+</AnchorPane>

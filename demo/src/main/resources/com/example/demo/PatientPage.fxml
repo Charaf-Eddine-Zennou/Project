@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.demo.controller.PatientController">
+    <children>
+        <!-- Label with corrected font property -->
+        <Label text="Créer ou Supprimer un Patient" layoutX="100" layoutY="20" style="-fx-font-family: Arial; -fx-font-size: 20;" />
+
+        <!-- Nom -->
+        <Label text="Nom" layoutX="50" layoutY="60"/>
+        <TextField fx:id="nomField" layoutX="150" layoutY="60" />
+
+        <!-- Prénom -->
+        <Label text="Prénom" layoutX="50" layoutY="100"/>
+        <TextField fx:id="prenomField" layoutX="150" layoutY="100" />
+
+        <!-- Adresse -->
+        <Label text="Adresse" layoutX="50" layoutY="140"/>
+        <TextField fx:id="adresseField" layoutX="150" layoutY="140" />
+
+        <!-- Téléphone -->
+        <Label text="Téléphone" layoutX="50" layoutY="180"/>
+        <TextField fx:id="telephoneField" layoutX="150" layoutY="180" />
+
+        <!-- Date de naissance -->
+        <Label text="Date de naissance" layoutX="50" layoutY="220"/>
+        <DatePicker fx:id="dateNaissancePicker" layoutX="150" layoutY="220"/>
+
+        <!-- Boutons -->
+        <Button text="Ajouter Patient" layoutX="50" layoutY="260" onAction="#ajouterPatient"/>
+        <Button text="Supprimer Patient" layoutX="200" layoutY="260" onAction="#supprimerPatient"/>
+        <Button text="Retour" layoutX="150" layoutY="300" onAction="#retournerInterfacePrecedente"/>
+
+    </children>
+</AnchorPane>

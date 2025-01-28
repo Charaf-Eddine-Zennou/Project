@@ -1,0 +1,52 @@
+/* Style for the VBox container acting as a bordered frame */
+.vbox-cadre {
+    -fx-border-color: #FF7043; /* Orange border */
+    -fx-border-width: 2;
+    -fx-padding: 15;
+    -fx-background-color: #FFFFFF;
+    -fx-background-radius: 5;
+}
+
+/* Label for Menu Console */
+.label-menu {
+    -fx-font-size: 24px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #FF7043; /* Orange text */
+    -fx-alignment: center;
+    -fx-padding: 10;
+}
+
+/* Style for the separator to provide a clean break */
+.separator {
+    -fx-background-color: #FF7043; /* Orange separator */
+    -fx-padding: 5;
+}
+
+/* VBox content section for the buttons */
+.vbox-content {
+    -fx-spacing: 20;
+    -fx-alignment: center;
+}
+
+/* Style for buttons */
+.button-action {
+    -fx-background-color: #FF7043; /* Orange button */
+    -fx-text-fill: white;
+    -fx-font-weight: bold;
+    -fx-font-size: 16px;
+    -fx-padding: 10 20;
+    -fx-background-radius: 5;
+    -fx-pref-width: 250px;
+    -fx-cursor: hand;
+}
+
+/* Button hover effect */
+.button-action:hover {
+    -fx-background-color: #F4511E; /* Darker orange on hover */
+}
+
+/* StackPane with vertical alignment */
+.stack-pane {
+    -fx-alignment: center;
+    -fx-padding: 10;
+}

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.VBox?>
+
+<VBox xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1"
+      fx:controller="com.example.demo.controller.MedicalRecordPageController"
+      alignment="CENTER" spacing="20" style="-fx-padding: 20; -fx-background-color: #f9f9f9;">
+    <TableView fx:id="medicalRecordsTable" prefHeight="300" prefWidth="500" />
+    <Button text="View Medical Record" onAction="#handleViewMedicalRecord" style="-fx-background-color: #32cd32; -fx-text-fill: white;" />
+    <Button text="Update Medical Record" onAction="#handleUpdateMedicalRecord" style="-fx-background-color: #ffa500; -fx-text-fill: white;" />
+    <Button text="Back" onAction="#handleBackToMenu" style="-fx-background-color: #444; -fx-text-fill: white;" />
+</VBox>

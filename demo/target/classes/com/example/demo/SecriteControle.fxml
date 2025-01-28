@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane xmlns="http://javafx.com/javafx"
+            xmlns:fx="http://javafx.com/fxml"
+            fx:controller="com.example.demo.controller.SecriteControle"
+            prefHeight="400.0" prefWidth="600.0"
+            stylesheets="@styles.css">
+
+    <children>
+        <!-- Add a VBox to act as a bordered container (cadre) for Menu Console -->
+        <VBox AnchorPane.topAnchor="10" AnchorPane.leftAnchor="20" AnchorPane.rightAnchor="20" styleClass="vbox-cadre">
+            <!-- Label for Menu Secretaire Console -->
+            <Label text="Menu Secretaire Console" styleClass="label-menu" alignment="CENTER" />
+            <Separator styleClass="separator" />
+        </VBox>
+
+        <!-- Centering the StackPane -->
+        <StackPane AnchorPane.topAnchor="80" AnchorPane.leftAnchor="20" AnchorPane.rightAnchor="20" AnchorPane.bottomAnchor="20">
+            <VBox spacing="20" alignment="CENTER" styleClass="vbox-content">
+                <!-- Button to manage appointments -->
+                <Button text="Gérer Rendez-Vous" onAction="#handleRendezVous" styleClass="button-action"/>
+
+                <!-- Button to manage patients -->
+                <Button text="Gérer Patient" onAction="#goToPatientPage" styleClass="button-action"/>
+
+                <!-- Button to manage medical records -->
+                <Button text="Gérer Fiche Médicale" onAction="#goToMedicalRecordPage" styleClass="button-action"/>
+                <Button text="Back" onAction="#backMain" style="-fx-background-color: #4A90E2; -fx-text-fill: white; -fx-font-weight: bold;" />
+            </VBox>
+        </StackPane>
+    </children>
+</AnchorPane>

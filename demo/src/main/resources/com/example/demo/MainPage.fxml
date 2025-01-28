@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<AnchorPane xmlns:fx="http://javafx.com/fxml" fx:controller="com.example.demo.controller.MainController">
+    <children>
+        <!-- Add a VBox to act as a bordered container (cadre) for Menu Console -->
+        <VBox AnchorPane.topAnchor="10" AnchorPane.leftAnchor="20" AnchorPane.rightAnchor="20" style="-fx-border-color: #4A90E2; -fx-border-width: 2; -fx-padding: 10; -fx-background-color: #FFFFFF;">
+            <!-- Label for Menu Console -->
+            <Label text="Menu Console" style="-fx-font-size: 24; -fx-font-weight: bold; -fx-text-fill: #4A90E2;" alignment="CENTER" />
+            <Separator />
+        </VBox>
+        <!-- Centering the StackPane -->
+        <StackPane AnchorPane.topAnchor="80" AnchorPane.leftAnchor="20" AnchorPane.rightAnchor="20" AnchorPane.bottomAnchor="20">
+            <VBox spacing="20" alignment="CENTER" style="-fx-border-color: #4A90E2; -fx-border-width: 2; -fx-padding: 10; -fx-background-color: #F4F6F9;">
+                <Button text="Connecter comme admin" onAction="#goToLoginPageAdmi" style="-fx-background-color: #4A90E2; -fx-text-fill: white; -fx-font-weight: bold;" />
+                <Button text="Connecter comme Secretaire" onAction="#goToLoginPage" style="-fx-background-color: #4A90E2; -fx-text-fill: white; -fx-font-weight: bold;" />
+            </VBox>
+        </StackPane>
+    </children>
+</AnchorPane>

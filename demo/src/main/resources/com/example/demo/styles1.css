@@ -1,0 +1,52 @@
+/* Style for the VBox container acting as a bordered frame */
+.vbox-cadre {
+    -fx-border-color: #607D8B; /* Blue-gray border */
+    -fx-border-width: 2;
+    -fx-padding: 15;
+    -fx-background-color: #ECEFF1; /* Light gray-blue background */
+    -fx-background-radius: 5;
+}
+
+/* Label for Admin Console */
+.label-menu {
+    -fx-font-size: 24px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #455A64; /* Dark blue-gray text */
+    -fx-alignment: center;
+    -fx-padding: 10;
+}
+
+/* Style for the separator to provide a clean break */
+.separator {
+    -fx-background-color: #455A64; /* Dark blue-gray separator */
+    -fx-padding: 5;
+}
+
+/* VBox content section for the buttons */
+.vbox-content {
+    -fx-spacing: 20;
+    -fx-alignment: center;
+}
+
+/* Style for buttons */
+.button-action {
+    -fx-background-color: #607D8B; /* Blue-gray button */
+    -fx-text-fill: white;
+    -fx-font-weight: bold;
+    -fx-font-size: 16px;
+    -fx-padding: 10 20;
+    -fx-background-radius: 5;
+    -fx-pref-width: 250px;
+    -fx-cursor: hand;
+}
+
+/* Button hover effect */
+.button-action:hover {
+    -fx-background-color: #455A64; /* Darker blue-gray on hover */
+}
+
+/* StackPane with vertical alignment */
+.stack-pane {
+    -fx-alignment: center;
+    -fx-padding: 10;
+}

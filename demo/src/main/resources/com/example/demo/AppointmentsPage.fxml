@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane xmlns="http://javafx.com/javafx"
+            xmlns:fx="http://javafx.com/fxml"
+            fx:controller="com.example.demo.controller.MainController"
+            prefHeight="400.0" prefWidth="600.0">
+
+</AnchorPane>
+        <?xml version="1.0" encoding="UTF-8"?>
+
+        <?import javafx.geometry.Insets?>
+        <?import javafx.scene.control.Button?>
+        <?import javafx.scene.control.TableView?>
+        <?import javafx.scene.layout.VBox?>
+
+<VBox xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1"
+      fx:controller="com.example.demo.controller.AppointmentsPageController"
+      alignment="CENTER" spacing="20" style="-fx-padding: 20; -fx-background-color: #f9f9f9;">
+<TableView fx:id="appointmentsTable" prefHeight="300" prefWidth="500" />
+<Button text="Add Appointment" onAction="#handleAddAppointment" style="-fx-background-color: #32cd32; -fx-text-fill: white;" />
+<Button text="Delete Appointment" onAction="#handleDeleteAppointment" style="-fx-background-color: #ff4500; -fx-text-fill: white;" />
+<Button text="Back" onAction="#handleBackToMenu" style="-fx-background-color: #444; -fx-text-fill: white;" />
+</VBox>
+

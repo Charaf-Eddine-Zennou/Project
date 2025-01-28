@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<AnchorPane fx:controller="com.example.demo.RendezVousPageController" xmlns:fx="http://javafx.com/fxml">
+    <children>
+        <VBox spacing="10" alignment="CENTER" layoutX="50" layoutY="50" prefWidth="300">
+            <Label text="Rendez-Vous Page" style="-fx-font-size: 18; -fx-font-weight: bold;" />
+
+            <HBox spacing="10" alignment="CENTER">
+                <Label text="Nom: " />
+                <TextField fx:id="nomPatient" promptText="Entrer le nom" />
+            </HBox>
+
+            <HBox spacing="10" alignment="CENTER">
+                <Label text="Date: " />
+                <DatePicker fx:id="dateRendezVous" />
+            </HBox>
+
+            <HBox spacing="10" alignment="CENTER">
+                <Label text="Heure: " />
+                <TextField fx:id="heureRendezVous" promptText="HH:mm" />
+            </HBox>
+
+            <Button text="Confirmer" onAction="#confirmerRendezVous" />
+
+            <!-- Retour Button -->
+            <Button text="Retour" onAction="#retournerALogin" />
+        </VBox>
+    </children>
+</AnchorPane>
